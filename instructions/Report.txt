@@ -1,0 +1,51 @@
+Krutika Bhalla
+
+Greetings, 
+
+    Thankyou for assigning me this project. I am pleased to say that I have implemented all 
+    tasks, required and bonus. 
+
+TechStack Used:
+    - Python
+    - Docker
+    - Plotly
+    - Flask
+    - Postgres Database
+    - Pandas
+    - AJAX
+    
+Approach - 
+    I first setup docker on my machine (MacOS), further i pulled postgres image and implemented
+    certain commands just to understand the schema. Then I logged into localhost to view the 
+    schema definition. Once docker setup was completed, I moved on to Flask implementation.
+    In app.py you may find some routes that allow users to - 
+        1. View database tables.
+        2. Plot Graphs as per entries.
+        3. Download .csv files of respective tables.
+        4. Reset Entries.
+    
+    View Database tables - this allows you to view certain entries from the tables and see the 
+    trends over time on those entries only.
+    
+    Plot Graphs - Users would find 2 entry fields that allows them to add the start and end dates 
+    then the graphs are plotted as per those dates.
+
+    Download .csv files - You can see 3 blue buttons on the top of the web page that allow users
+    download the .csv files of respective tables.
+
+    Reset Entries - Since i could not update the database with any newer values, I decided to 
+    refresh the data to the initial 5 values of each row without any plots. For this i used AJAX
+    thus users do not have to reload the entire page but instead you can click on that button to 
+    reset all entries. Further user can select any 2 values and plot a graph.
+
+    Note - For entering start and end time, just copy paste the timestamp entry and click submit.
+
+Commands - 
+    docker compose up -d
+    export FLASK_APP=app.py
+    flask run
+The app would start at port 5000.
+
+Thankyou for you time!
+
+
